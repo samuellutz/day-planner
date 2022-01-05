@@ -1,11 +1,11 @@
 // /----defining moment varibles used to show time----//
-var date = moment().format("MMM Do YY");
+var date = moment().format("MMMM ddd Do, YYYY");
 
 //-------append date----------//
 $("#currentDay").append(date);
 
 // writing a function to update the time
-var timeOfday = ["9", "10", "11", "12", "1", "2", "3", "4", "5"]
+var timeOfday = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
 updatetime();
 
 function updatetime() {
@@ -33,6 +33,11 @@ $(".saveBtn").on("click", function() {
     console.log(timeOfday, textContent);
 });
 
-
+// the local storage target area
 $("#9am").children("input").val(localStorage.getItem("9am"));
+
+$("#10am").children("input").val(localStorage.getItem("10am"));
+
+$("#11am").children("input").val(localStorage.getItem("11am"));
+
 
