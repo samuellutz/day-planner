@@ -26,11 +26,18 @@ function updatetime() {
 
 //   getting local storage to save to selected input to proper place
 $(".saveBtn").on("click", function() {
-    var timeOfday = $(this).parent().attr("id");
-    var textContent = $("input").val();
+  var timeOfday = $(this).parent().attr("id");
+  console.log("timeOfDay is ", timeOfday)
+  
+  var siblings = $(this).siblings()
+  console.log(siblings) //I expect this would be an array of the clicked button's siblings
+  console.log(siblings[0]) //so this would probably be the first element in that array...
+  console.log(siblings[1]) //and this might be the second. The only way to tell is through running this code!
 
-    localStorage.setItem(timeOfday, textContent);
-    console.log(timeOfday, textContent);
+  var textContent = siblings[1].value
+  console.log(textContent)
+  siblings[1].value //whatever you typed into that input box
+  console.log(timeOfday, textContent);
 });
 
 // the local storage target area
