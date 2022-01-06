@@ -12,6 +12,8 @@ A planner to set meetings and times for each day of the week.
 
 * [See Live Site](https://samuellutz.github.io/day-planner/)
 
+![image](https://user-images.githubusercontent.com/91674571/148427905-18f811f3-5ceb-4bc5-b3fa-c21794cb6933.png)
+
 
 ## Authors
 
