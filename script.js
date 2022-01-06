@@ -36,7 +36,8 @@ $(".saveBtn").on("click", function() {
 
   var textContent = siblings[1].value
   console.log(textContent)
-  siblings[1].value //whatever you typed into that input box
+
+  localStorage.setItem(timeOfday, textContent);
   console.log(timeOfday, textContent);
 });
 
@@ -47,4 +48,14 @@ $("#10am").children("input").val(localStorage.getItem("10am"));
 
 $("#11am").children("input").val(localStorage.getItem("11am"));
 
+$("#12pm").children("input").val(localStorage.getItem("12pm"));
 
+$("#1pm").children("input").val(localStorage.getItem("1pm"));
+
+$("#2pm").children("input").val(localStorage.getItem("2pm"));
+
+$("#3pm").children("input").val(localStorage.getItem("3pm"));
+
+$("#4pm").children("input").val(localStorage.getItem("4pm"));
+
+$("#5pm").children("input").val(localStorage.getItem("5pm"));
